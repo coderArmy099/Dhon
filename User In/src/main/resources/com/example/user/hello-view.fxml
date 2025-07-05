@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="355.0" style="-fx-background-color: #7fb3d5;" BorderPane.alignment="CENTER">
+         <children>
+            <Icon content="BOOK" layoutX="135.0" layoutY="71.0" prefHeight="42.0" prefWidth="62.0" />
+            <ImageView fitHeight="192.0" fitWidth="210.0" layoutX="67.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/HP/Desktop/User%20In/src/main/resources/com/example/Images/PreLogo.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="73.0" layoutY="381.0" stroke="#751f1f" strokeType="OUTSIDE" text="Learn The Unlearn" wrappingWidth="186.5533447265625">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="413.0" BorderPane.alignment="CENTER">
+         <TextField floatText="User Name" layoutX="95.0" layoutY="203.0" prefHeight="38.0" prefWidth="154.0"
+                    style="-fx-border-color: #c0392b; -fx-border-width: 0px 0px 2px 0px;"/>
+         <PasswordField layoutX="96.0" layoutY="263.0" prefHeight="42.0" prefWidth="152.0" promptText="Password"
+                        style="-fx-border-color: #c0392b; -fx-border-width: 0px 0px 2px 0px;">
+            <font>
+               <Font name="Arial Unicode MS" size="18.0"/>
+            </font>
+         </PasswordField>
+         <Icon content="PERSON_PIN_CIRCLE" layoutX="54.0" layoutY="215.0"/>
+         <Icon content="LOCK" layoutX="54.0" layoutY="278.0"/>
+         <Button layoutX="122.0" layoutY="348.0" mnemonicParsing="false" style="-fx-background-color: #aed6f1;"
+                 text="Sign In" textFill="#1e0d0d" wrapText="true">
+            <font>
+               <Font name="System Bold Italic" size="12.179104804992676"/>
+            </font>
+         </Button>
+         <Hyperlink layoutX="96.0" layoutY="446.0" prefHeight="24.0" prefWidth="117.0" text="Forgot Password?"/>
+         <Icon content="PERSON_PIN" layoutX="150.0" layoutY="100.0">
+            <padding>
+               <Insets right="10.0" top="10.0"/>
+            </padding>
+         </Icon>
+         <Text fill="#2f0202" layoutX="117.0" layoutY="160.0" stroke="#972f2f" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="User Login">
+            <effect>
+               <Blend/>
+            </effect>
+            <font>
+               <Font size="21.0"/>
+            </font>
+         </Text>
+         <Button layoutX="290.0" minWidth="31.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="54.0"
+                 style="-fx-background-color: #f4ecf7;"/>
+         <Icon content="CLOSE" layoutX="290.0" prefHeight="49.0" prefWidth="54.0"
+               style="-fx-background-color: #c0392b;"/>
+      </AnchorPane>
+   </center>
+</BorderPane>
